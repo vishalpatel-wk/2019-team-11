@@ -6,14 +6,10 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardHeader from "@material-ui/core/CardHeader";
 import TextField from "@material-ui/core/TextField";
-import ApiClient from "../../server-core/api-client";
-import Location from "../../server-core/location-service";
-import BorderData from "../../server-core/border-data-api";
 import {
     ADDRESS_MODAL_TITLE,
     ADDRESS_MODAL_INPUT_PLACEHOLDER
 } from "../constants/address";
-import { SWIMMING_LAYER } from "../../constants_shared/layers";
 import "./address.css";
 
 class AddressModal extends Component {
