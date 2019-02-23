@@ -33,9 +33,9 @@ class AddressModal extends Component {
     }
 
     render() {
-        let sampleResultCallback = (results) => {
-            console.log("Sample Results: " + results);
-        };
+        // let sampleResultCallback = (results) => {
+        //     console.log("Sample Results: " + results);
+        // };
 
         return (
             <Card className="modal">
@@ -57,7 +57,6 @@ class AddressModal extends Component {
                         color="primary"
                         onClick={async () => {
                             let hucId = await Location.getHucFromAddress(this.state.address);
-                            console.log("hucId: " + hucId);
 
                             // TODO hook up call and callback for ecoli data
                             // let results = API.getData(this.state.address, SWIMMING_LAYER)
